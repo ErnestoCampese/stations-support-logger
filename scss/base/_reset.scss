@@ -1,0 +1,43 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  line-height: var(--font-line-height-base);
+  z-index: var(--z-index-base);
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+small {
+  font-size: var(--font-size-extra-small);
+}
+
+p {
+  font-size: var(--font-size-medium);
+}
+
+h1 {
+  font-size: var(--font-size-large);
+}

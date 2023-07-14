@@ -1,0 +1,35 @@
+.text {
+  &--important {
+    font-weight: 700;
+  }
+
+  &--light {
+    opacity: 0.6;
+  }
+
+  &--lightest {
+    opacity: 0.4;
+  }
+
+  &--link {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
+
+  &--small {
+    font-size: var(--font-size-small);
+  }
+
+  &--x-small {
+    font-size: var(--font-size-extra-small);
+  }
+
+  &--center {
+    text-align: center;
+  }
+}

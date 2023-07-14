@@ -132,9 +132,17 @@ h1 {
   background-color: var(--primary-color);
   color: var(--light-color);
 }
+.btn--primary:focus {
+  outline: 1px solid var(--primary-color);
+  outline-offset: 2px;
+}
 .btn--secondary {
   background-color: var(--secondary-color);
   color: var(--dark-color);
+}
+.btn--secondary:focus {
+  outline: 1px solid var(--secondary-color);
+  outline-offset: 2px;
 }
 .btn--primary-outline, .btn--secondary-outline {
   background-color: transparent;
@@ -148,6 +156,10 @@ h1 {
 .btn--secondary-outline:hover {
   border-color: var(--primary-color);
   color: var(--primary-color);
+}
+.btn--secondary-outline:focus {
+  outline: 1px solid var(--primary-color);
+  outline-offset: 2px;
 }
 
 fieldset {
@@ -169,6 +181,7 @@ fieldset label {
   font-size: var(--font-size-small);
   transition: all 0.1s ease-in-out;
   cursor: pointer;
+  border-bottom: var(--border-thin);
 }
 
 select {

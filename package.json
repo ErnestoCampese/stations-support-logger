@@ -4,7 +4,7 @@
   "description": "Stations Support Logger is a small utility created to streamline a simple task at the workplace: recording and logging actions taken on different decant stations.",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --no-source-map --watch scss/main.scss:css/main.css"
   },
   "repository": {
     "type": "git",

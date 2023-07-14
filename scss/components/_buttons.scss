@@ -1,0 +1,78 @@
+.btn {
+  $font-size-base: var(--font-size-small);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $font-size-base calc($font-size-base * 1.33);
+  font-size: $font-size-base;
+  gap: calc($font-size-base / 2);
+  font-family: var(--font-family-base);
+
+  svg {
+    width: calc(1.25 * 1em);
+  }
+
+  &--primary,
+  &--secondary,
+  &--primary-outline,
+  &--secondary-outline {
+    border-radius: var(--border-radius-small);
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: scale 1s ease-out, opacity 6ms ease-in-out;
+
+    &:hover {
+      opacity: 0.8;
+      transition: opacity 0s;
+    }
+
+    &:active {
+      scale: 0.98;
+      transition: scale 0s;
+    }
+  }
+
+  &--primary {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+
+    &:focus {
+      outline: 1px solid var(--primary-color);
+      outline-offset: 2px;
+    }
+  }
+
+  &--secondary {
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+
+    &:focus {
+      outline: 1px solid var(--secondary-color);
+      outline-offset: 2px;
+    }
+  }
+
+  &--primary-outline,
+  &--secondary-outline {
+    background-color: transparent;
+  }
+
+  &--primary-outline {
+    border: 1px solid var(--primary-color);
+  }
+
+  &--secondary-outline {
+    border: 1px solid var(--secondary-color);
+
+    &:hover {
+      border-color: var(--primary-color);
+      color: var(--primary-color);
+    }
+
+    &:focus {
+      outline: 1px solid var(--primary-color);
+      outline-offset: 2px;
+    }
+  }
+}

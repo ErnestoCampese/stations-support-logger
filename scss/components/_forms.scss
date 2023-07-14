@@ -1,0 +1,48 @@
+fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--spacing-large);
+  gap: var(--spacing-large);
+  border: var(--border-thin);
+  border-radius: var(--border-radius-small);
+  width: 60rem;
+
+  legend {
+    font-size: var(--font-size-small);
+    padding: 0px var(--spacing-small);
+    font-weight: 500;
+  }
+
+  label {
+    font-size: var(--font-size-small);
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+    border-bottom: var(--border-thin);
+  }
+}
+
+select {
+  font-size: var(--font-size-small);
+  border: none;
+  cursor: pointer;
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.04);
+  padding: 1em calc(1em * 1.33);
+  border-radius: var(--border-radius-small);
+  gap: var(--spacing-small);
+
+  &:focus-within,
+  &:hover {
+    border: 1px solid var(--primary-color);
+  }
+}

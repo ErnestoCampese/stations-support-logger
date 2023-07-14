@@ -1,0 +1,41 @@
+// Breakpoints
+:root {
+  // Colors
+  --primary-color: rgb(0, 117, 255);
+  --secondary-color: rgb(43, 45, 46);
+  --light-color: rgb(245, 245, 245);
+  --dark-color: rgb(40, 39, 42);
+
+  // Typography
+  --font-family-base: "Roboto", sans-serif;
+  --font-family-code: "Source Code Pro", monospace;
+  --font-line-height-base: 1.75;
+  --font-weight-base: 400;
+
+  // Font Sizes: Golden Ratio
+  --font-size-extra-small: 1rem;
+  --font-size-small: 1.618rem;
+  --font-size-medium: 2.618rem;
+  --font-size-large: 4.236rem;
+  --font-size-extra-large: 6.854rem;
+
+  // Spacing
+  --spacing-extra-small: 0.512rem;
+  --spacing-small: 0.8rem;
+  --spacing-medium: 1rem;
+  --spacing-large: 1.6rem;
+  --spacing-extra-large: 2.441rem;
+
+  // Border radius
+  --border-radius-small: 0.4rem;
+  --border-radius-medium: 0.8rem;
+  --border-radius-large: 1.953rem;
+
+  // Border Styles
+  --border-thin: 1px solid rgba(0, 0, 0, 0.2);
+
+  // Z-index
+  --z-index-back: 1000;
+  --z-index-base: 2000;
+  --z-index-front: 3000;
+}
