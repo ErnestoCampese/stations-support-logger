@@ -1,0 +1,19 @@
+{
+  "name": "stations-support-logger",
+  "version": "1.0.0",
+  "description": "Stations Support Logger is a small utility created to streamline a simple task at the workplace: recording and logging actions taken on different decant stations.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ErnestoCampese/stations-support-logger.git"
+  },
+  "author": "Ernesto Campese",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ErnestoCampese/stations-support-logger/issues"
+  },
+  "homepage": "https://github.com/ErnestoCampese/stations-support-logger#readme"
+}

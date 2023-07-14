@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Decant Logs Generator is a small utility created to streamline a simple task at the workplace: recording and logging actions taken on different decant stations. " />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Code+Pro:wght@100;300;400;500&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Decant Logs Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Decant Logs Generator</h1>
+      <form>
+        <fieldset>
+          <legend>Input Settings</legend>
+
+          <div class="field">
+            <label for="stations">
+              <span>Select a Station:</span>
+            </label>
+            <select name="stations" id="stations"></select>
+          </div>
+
+          <div class="field">
+            <label for="actions">
+              <span>Select an Action:</span>
+            </label>
+            <select name="actions" id="actions">
+              <option value="unplug">Unplug</option>
+              <option value="restart">Restart</option>
+            </select>
+          </div>
+
+          <section class="actions">
+            <button type="button" class="btn btn--primary" id="add">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8z" />
+              </svg>
+              Add
+            </button>
+
+            <button type="button" class="btn btn--secondary-outline" id="remove">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M7 11v2h10v-2H7zm5-9C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8z" />
+              </svg>
+              Remove
+            </button>
+          </section>
+        </fieldset>
+      </form>
+
+      <section class="output">
+        <div class="clipboard">
+          <ul id="list"></ul>
+          <svg xmlns="http://www.w3.org/2000/svg" id="copy" class="clipboard__copy hidden" width="32" height="32" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" id="copied" class="clipboard__copied hidden" width="32" height="32" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M8 7h11v14H8z" opacity=".3" />
+            <path
+              fill="currentColor"
+              d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+          </svg>
+        </div>
+      </section>
+    </div>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
